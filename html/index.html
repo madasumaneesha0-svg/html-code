@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            margin: 0px;
+            background-image: url("https://cdn3.vectorstock.com/i/1000x1000/59/32/blue-abstract-background-vector-1695932.jpg");
+            min-height: 100vh;
+            background-size: cover;
+        }
+
+        .parent-container {
+            width: 35%;
+            margin: auto;
+            border: 1px solid white;
+            margin-top: 5%;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .parent-container h2 {
+            font-size: 2rem;
+            text-align: center;
+            color: white;
+            font-family: sans-serif;
+
+        }
+
+        .form-field {
+            margin-bottom: 20px;
+        }
+
+        .font-field input {
+            padding: 20px;
+            width: 90%;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        .form-dropdown select {
+            padding: 20px;
+            width: 95%;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .parent-container button{
+            background-color: black (165, 138, 42);
+            padding: 15px;
+            color: black;
+            width: 25%;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="parent-container" action="https://www.google.com">
+        <h2>Register</h2>
+        <div class="form-field"><input type="text" placeholder=" Enter Name" name="First name"> </div>
+        <div class="form-field"><input type="email" placeholder=" Enter Email" name="email"> </div>
+        <div class="form-field"><input type="password" placeholder="Enter Password"> </div>
+        <div><select name="city" id="" class="form-dropdown">
+                <option value="">Select your city</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Vizag">Vizag</option>
+                <option value="Banglore">Banglore</option>
+            </select>
+        </div>
+        <button>Submit</button>
+    </form>
+
+</body>
+
+</html>
