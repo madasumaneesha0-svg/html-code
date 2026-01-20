@@ -8,63 +8,124 @@
     <style>
         body {
             margin: 0px;
-            background-image: url("https://cdn3.vectorstock.com/i/1000x1000/59/32/blue-abstract-background-vector-1695932.jpg");
+            background-image: url("https://wallpapercave.com/wp/wp9315285.jpg");
             min-height: 100vh;
             background-size: cover;
         }
 
         .parent-container {
-            width: 35%;
+            width: 90%;
+            max-width: 420px;
             margin: auto;
-            border: 1px solid white;
             margin-top: 5%;
-            padding: 20px;
-            border-radius: 10px;
+            padding: 22px;
+            border-radius: 18px;
+            background-color: rgba(255, 255, 255, 0.22);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+
+
         }
 
-        .parent-container h2 {
+
+        .parent-container h1 {
             font-size: 2rem;
             text-align: center;
-            color: white;
+            color: rgba(0, 0, 0, 0.89);
             font-family: sans-serif;
-
         }
+
+        .form-field input,
+        .form-dropdown select {
+            width: 90%;
+            box-sizing: border-box;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+
+            background: rgba(255, 255, 255, 0.35);
+            color: #000;
+        }
+
 
         .form-field {
             margin-bottom: 20px;
         }
 
-        .font-field input {
-            padding: 20px;
-            width: 90%;
+        .form-field input {
+            padding: 10px;
+           
             font-size: 1.3rem;
             margin-bottom: 20px;
+            border: 0px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.21);
+            border: 1px solid rgba(32, 32, 32, 0.481);
+            display: block;
+            margin: 20px auto;
+
         }
 
         .form-dropdown select {
-            padding: 20px;
-            width: 95%;
-            font-size: 1.5rem;
+            padding: 9px;
+           
+            font-size: 1.4rem;
             margin-bottom: 20px;
+            border-radius: 10px;
+            color: rgb(119, 119, 119);
+            background-color: rgba(255, 255, 255, 0.21);
+            display: block;
+            margin: 20px auto;
         }
 
-        .parent-container button{
-            background-color: black (165, 138, 42);
-            padding: 15px;
-            color: black;
-            width: 25%;
-            font-size: 1.5rem;
+        .parent-container button {
+            background-color: rgba(0, 0, 0, 0.727);
+            padding: 10px;
+            color: white;
+            width: 90%;
+            max-width: 200px;
+            font-size: 1.3rem;
+            border: 0px;
+            border-radius: 12px;
+            display: block;
+            margin: 20px auto;
+
+        }
+
+        .parent-container button:hover {
+            background-color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            .parent-container {
+                margin-top: 10%;
+                padding: 15px;
+            }
+
+            .parent-container h2 {
+                font-size: 1.6rem;
+            }
+
+            .form-field input,
+            .form-dropdown select {
+                font-size: 1.1rem;
+            }
+
+            .parent-container button {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
 
 <body>
     <form class="parent-container" action="https://www.google.com">
-        <h2>Register</h2>
+        <h1>Register</h1>
         <div class="form-field"><input type="text" placeholder=" Enter Name" name="First name"> </div>
         <div class="form-field"><input type="email" placeholder=" Enter Email" name="email"> </div>
         <div class="form-field"><input type="password" placeholder="Enter Password"> </div>
-        <div><select name="city" id="" class="form-dropdown">
+        <div class="form-dropdown">
+            <select name="city" id="" class="form-dropdown">
                 <option value="">Select your city</option>
                 <option value="Hyderabad">Hyderabad</option>
                 <option value="Vizag">Vizag</option>
